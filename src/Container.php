@@ -121,7 +121,7 @@ class Container implements ContainerInterface, FactoryInterface, InvokerInterfac
      * @throws DependencyException Error while resolving the entry.
      * @throws NotFoundException No entry found for the given name.
      */
-    public function get(string $id) : mixed
+    public function get($id)
     {
         // If the entry is already resolved we return it
         if (isset($this->resolvedEntries[$id]) || array_key_exists($id, $this->resolvedEntries)) {
@@ -187,7 +187,7 @@ class Container implements ContainerInterface, FactoryInterface, InvokerInterfac
     /**
      * {@inheritDoc}
      */
-    public function has(string $id) : bool
+    public function has($id)
     {
         if (array_key_exists($id, $this->resolvedEntries)) {
             return true;
