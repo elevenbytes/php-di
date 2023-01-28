@@ -1,5 +1,5 @@
 {
-    "name": "elevenbytes/php-di",
+    "name": "php-di/php-di",
     "type": "library",
     "description": "The dependency injection container for humans",
     "keywords": ["di", "dependency injection", "container", "ioc", "psr-11", "psr11", "container-interop"],
