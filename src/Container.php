@@ -187,7 +187,7 @@ class Container implements ContainerInterface, FactoryInterface, InvokerInterfac
     /**
      * {@inheritDoc}
      */
-    public function has($id)
+    public function has($id): bool
     {
         if (array_key_exists($id, $this->resolvedEntries)) {
             return true;
